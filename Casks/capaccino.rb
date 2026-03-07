@@ -1,6 +1,6 @@
 cask "capaccino" do
-  version "1.0.2"
-  sha256 "db693e9d5286f613326a01f85015463b6cd8c92d8bcd995a1c15744322bc9d5f"
+  version :latest
+  sha256 :no_check
 
   url "https://storage.googleapis.com/capaccino/Capaccino.dmg"
   name "Capaccino"
