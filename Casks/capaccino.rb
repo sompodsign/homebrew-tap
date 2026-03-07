@@ -12,8 +12,13 @@ cask "capaccino" do
   app "Capaccino.app"
 
   postflight do
+    # Clear quarantine flag
     system_command "/usr/bin/xattr",
                    args: ["-c", "#{appdir}/Capaccino.app"]
+    # Reset accessibility permission so macOS prompts fresh
+    # (prevents stale TCC entry when binary signature changes)
+    system_command "/usr/bin/tccutil",
+                   args: ["reset", "Accessibility", "com.capaccino.app"]
   end
 
   zap trash: [
