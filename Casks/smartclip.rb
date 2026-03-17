@@ -1,6 +1,6 @@
 cask "smartclip" do
-  version "0.5.0"
-  sha256 "43ff7ded5b01388bdda2332b9b32f2b9afe62907aac31df04bd35892698d24a6"
+  version "0.5.1"
+  sha256 "41d9e9814405c97641273f1c2d0c7e2fca0df282b25e521b18c67cfb0b592ccd"
 
   url "https://storage.googleapis.com/capaccino/SmartClip_#{version}_aarch64.dmg"
   name "SmartClip"
